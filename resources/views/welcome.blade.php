@@ -79,9 +79,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Tesis!!
+                    Laravel PrototipoTesis!!
                 </div>
-
+                <?php
+                $test =SSH::run('ls', function($line)
+        {
+            echo $line.PHP_EOL;
+        });
+echo $test;
+                 ?>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
